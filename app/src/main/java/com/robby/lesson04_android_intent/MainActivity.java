@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.btnCustomAct)
     public void actionCustomActivity() {
         Intent childIntent = new Intent(this, ChildActivity.class);
+        childIntent.putExtra(Intent.EXTRA_TEXT, "Your Name");
         startActivity(childIntent);
     }
 }
